@@ -34,7 +34,7 @@ function validarFormulario() {
     
     return true;
 }
-
+//Mensaje en caso de error
 function mostrarError(mensaje) {
     const mensajeDiv = document.getElementById("mensaje");
     mensajeDiv.innerHTML = <p class="error">${mensaje}</p>;
