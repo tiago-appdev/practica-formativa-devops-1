@@ -36,7 +36,7 @@ if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
 if (strlen($_POST["password"]) < 6) {
     echo json_encode([
         "status" => "error",
-        "message" => "La contraseña debe tener al menos 6 caracteres"
+        "message" => "La contraseña debe tener al menos 8 caracteres"
     ]);
     exit;
 }
